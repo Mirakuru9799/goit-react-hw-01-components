@@ -21,7 +21,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title='Upload stats' elem={data}/>
+      <Statistics title='Upload stats' elem={data} />
+      <Statistics elem={data} />
       <FriendsList friends={friends} />
       <TransactionHistoryList transaction={transactions}
               type={transactions.type}

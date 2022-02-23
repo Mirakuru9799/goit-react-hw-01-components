@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Statistics({ elem, title }) {
+function Statistics({ elem, title = ' ' }) {
   return (
     <div>
       {title !== ' ' && <h2>{title}</h2>}
