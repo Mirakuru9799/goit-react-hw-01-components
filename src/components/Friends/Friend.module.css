@@ -1,0 +1,22 @@
+/*.friendList {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #eaecee;
+  padding: 0px;
+  width: 300px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  list-style-type: none;
+}*/
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 40%;
+}

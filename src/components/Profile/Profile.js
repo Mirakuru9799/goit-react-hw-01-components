@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from '../Profile/Profile.module.css';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import styles from '../Profile/Profile.module.css';
 
 function Profile(props) {
   const { username, tag, location, avatar, stats } = props;

@@ -5,9 +5,11 @@ import Profile from './Profile/Profile';
 //import data from './components/Statistics/data.json';
 //import Statistics from './components/Statistics/Statistics';
 // Задание 3. Список друзей
-//import FriendsList from './components/Friends/FriendsList';
-//import friends from './components/Friends/friends.json';
+import FriendsList from './Friends/FriendsList';
+import friends from './Data/friends.json';
 // Задание 4. История транзакций
+import TransactionHistoryList from './TransactionHistory/TransactionHistoryList';
+import transactions from './Data/transactions.json';
 
 function App() {
   return (
@@ -18,11 +20,16 @@ function App() {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-      />    
+      />
+      <FriendsList friends={friends} />
+      <TransactionHistoryList transaction={transactions}
+              type={transactions.type}
+        amount={transactions.amount}
+        currency={transactions.amount}/>;
     </div>
   );
 }
 
 export default App;
 //<Statistics stats={data} />
-//<FriendsList friends={friends} />
+//
