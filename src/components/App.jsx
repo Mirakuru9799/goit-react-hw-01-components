@@ -2,8 +2,8 @@
 import user from './Data/user.json';
 import Profile from './Profile/Profile';
 //Задание 2. Секция статистики
-//import data from './components/Statistics/data.json';
-//import Statistics from './components/Statistics/Statistics';
+import data from './Data/data.json';
+import Statistics from './Statistics/Statistics';
 // Задание 3. Список друзей
 import FriendsList from './Friends/FriendsList';
 import friends from './Data/friends.json';
@@ -21,6 +21,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title='Upload stats' elem={data}/>
       <FriendsList friends={friends} />
       <TransactionHistoryList transaction={transactions}
               type={transactions.type}
